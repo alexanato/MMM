@@ -1,0 +1,25 @@
+{
+  "name": "Excalibur",
+  "typeName": "waffe",
+  "rarity": "LEGENDARY",
+  "stats": {
+    "angriffsschaden": "15",
+    "angriffstempo": "1.6",
+    "kritische_chance": "12%"
+  },
+  "hiddenStats": {
+
+  },
+  "abilityDescription": "Erschafft bei einem kritischen Treffer einen Lichtblitz, der nahestehende Gegner blendet. Effekt nur aktiv wenn weniger als 50% Leben oder Schwäche Effekt hat",
+  "abilityTitle": "Arthurs letzter Wille",
+  "material": "minecraft:diamond_sword",
+  "components": [
+    {
+      "type": "HELLO_WORLD",
+      "properties": {
+        "message": "HALLO"
+      }
+    }
+  ],
+  "id": 1
+}
