@@ -17,7 +17,11 @@
     {
       "type": "HELLO_WORLD",
       "properties": {
-        "message": "HALLO"
+        "message": {
+          "type": "GET_NEAREST_ENTITY",
+          "properties": {
+          }
+        }
       }
     }
   ],

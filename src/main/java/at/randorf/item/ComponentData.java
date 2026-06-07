@@ -4,5 +4,5 @@ import java.util.Map;
 
 public record ComponentData(
         String type,
-        Map<String, String> properties
+        Map<String, Object> properties
 ) {}

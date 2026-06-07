@@ -1,10 +1,15 @@
 package at.randorf;
 
 import at.randorf.events.ItemEventManager;
+import at.randorf.item.ComponentData;
 import at.randorf.item.CustomItemData;
 import at.randorf.item.ItemFactory;
 import at.randorf.registries.ItemRegistry;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonDeserializer;
+import com.google.gson.JsonObject;
 import net.kyori.adventure.text.Component;
 import net.minestom.server.MinecraftServer;
 import net.minestom.server.coordinate.Pos;
@@ -20,7 +25,7 @@ import net.minestom.server.item.Material;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static final Gson gson = new Gson();
+    public static final ObjectMapper mapper = new ObjectMapper();
     public static void main(String[] args) {
         MinecraftServer minecraftServer = MinecraftServer.init();
 

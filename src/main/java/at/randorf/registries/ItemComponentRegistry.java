@@ -1,6 +1,8 @@
 package at.randorf.registries;
 
 import at.randorf.item.ItemComponent;
+import at.randorf.item.item_component.GetNearestEntity;
+import at.randorf.item.item_component.GetStat;
 import at.randorf.item.item_component.HelloWorld;
 
 import java.util.HashMap;
@@ -13,6 +15,8 @@ public class ItemComponentRegistry {
 
     static {
         REGISTRY.put("HELLO_WORLD", HelloWorld::new);
+        REGISTRY.put("GET_STAT", GetStat::new);
+        REGISTRY.put("GET_NEAREST_ENTITY", GetNearestEntity::new);
     }
     public static Optional<ItemComponent> createComponent(String type, Map<String, String> properties) {
         Function<Map<String, String>, ItemComponent> factory = REGISTRY.get(type.toUpperCase());

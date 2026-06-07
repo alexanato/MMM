@@ -22,6 +22,7 @@ repositories {
 
 dependencies {
     implementation("net.minestom:minestom:2026.06.02-26.1.2")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.17.0")
 }
 
 tasks.withType<JavaCompile>().configureEach {
