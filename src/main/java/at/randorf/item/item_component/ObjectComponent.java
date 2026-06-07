@@ -6,7 +6,6 @@ import at.randorf.item.ItemComponentContext;
 import at.randorf.item.item_data_type.ObjectResolver;
 import at.randorf.registries.ObjectResolverRegistry;
 
-import java.lang.reflect.Field;
 import java.util.Map;
 
 public abstract class ObjectComponent<T> extends BasicComponent implements ItemComponent {
@@ -35,8 +34,8 @@ public abstract class ObjectComponent<T> extends BasicComponent implements ItemC
                 throw new RuntimeException(e);
             }
         }
-        System.out.println(object);
-        System.out.println(object.getClass());
-        return ((ObjectResolver<Object>) ObjectResolverRegistry.get(object.getClass())).resolve(object, field);
+
+        return ObjectResolver.resolve( object,field);
+        //return ((ObjectResolver<Object>) ObjectResolverRegistry.get(object.getClass())).resolve(object, field);
     }
 }
