@@ -4,8 +4,10 @@ import at.randorf.item.ItemComponent;
 
 import java.util.Map;
 
-public abstract class BasicComponent implements ItemComponent {
+public class BasicComponent implements ItemComponent {
     public Map<String, String> properties;
+    public BasicComponent() {
+    }
     public BasicComponent(Map<String, String> properties){
         this.properties = properties;
     }

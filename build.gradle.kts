@@ -23,6 +23,10 @@ repositories {
 dependencies {
     implementation("net.minestom:minestom:2026.06.02-26.1.2")
     implementation("com.fasterxml.jackson.core:jackson-databind:2.17.0")
+    compileOnly("com.google.auto.service:auto-service-annotations:1.1.1")
+
+    // Der Codegenerator für den Kompiliervorgang
+    annotationProcessor("com.google.auto.service:auto-service:1.1.1")
 }
 
 tasks.withType<JavaCompile>().configureEach {

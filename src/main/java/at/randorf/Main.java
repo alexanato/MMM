@@ -4,6 +4,7 @@ import at.randorf.events.ItemEventManager;
 import at.randorf.item.ComponentData;
 import at.randorf.item.CustomItemData;
 import at.randorf.item.ItemFactory;
+import at.randorf.registries.ItemComponentRegistry;
 import at.randorf.registries.ItemRegistry;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
