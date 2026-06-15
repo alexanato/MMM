@@ -24,6 +24,3 @@ public class MessageCommandAction extends StringCommandAction {
         return format(message, context);
     }
 }
-        sender.sendMessage(format(message, context));
-    }
-}
