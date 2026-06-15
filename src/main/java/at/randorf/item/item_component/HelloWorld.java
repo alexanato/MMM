@@ -12,7 +12,6 @@ public class HelloWorld implements ItemComponent {
     public HelloWorld(Map<String, String> properties) {
         this.message = properties.get("message");
     }
-    public HelloWorld(){}
     @Override
     public void onUse(Entity user) {
         user.getInstance().getPlayers().forEach(player -> player.sendMessage(message));

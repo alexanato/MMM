@@ -1,0 +1,26 @@
+{
+  "name": "zonename",
+  "type": "WORD",
+  "subcommands": [
+    {
+      "label": "info",
+      "arguments": [],
+      "action": {
+        "type": "MESSAGE",
+        "properties": {
+          "message": "Info fur Zone {zonename}."
+        }
+      }
+    },
+    {
+      "label": "delete",
+      "arguments": [],
+      "action": {
+        "type": "MESSAGE",
+        "properties": {
+          "message": "Zone {zonename} wurde geloscht."
+        }
+      }
+    }
+  ]
+}

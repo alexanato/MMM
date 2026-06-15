@@ -12,7 +12,6 @@ public class GetStat implements ItemComponent {
     public GetStat(Map<String, String> properties) {
         this.stat = properties.get("stat");
     }
-    public GetStat(){}
     public String returnData(ItemComponentContext ctx){
         return ctx.itemData().stats().getOrDefault(stat, "");
     }

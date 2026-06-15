@@ -1,0 +1,14 @@
+{
+  "name": "zone",
+  "aliases": [],
+  "subcommands": [
+    {
+      "label": "manage",
+      "arguments": [
+        {
+          "ref": "zone/zonename"
+        }
+      ]
+    }
+  ]
+}

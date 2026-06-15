@@ -10,9 +10,6 @@ import java.util.Map;
 
 @ItemComponentType("GET_NEAREST_ENTITY")
 public class GetNearestEntity extends ObjectComponent{
-    public GetNearestEntity(){
-        super();
-    }
     public GetNearestEntity(Map properties) {
         super(properties);
     }

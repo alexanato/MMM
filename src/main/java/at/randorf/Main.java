@@ -1,5 +1,6 @@
 package at.randorf;
 
+import at.randorf.commands.CommandLoader;
 import at.randorf.events.ItemEventManager;
 import at.randorf.item.ComponentData;
 import at.randorf.item.CustomItemData;
@@ -45,6 +46,7 @@ public class Main {
             player.getInventory().addItemStack(ItemRegistry.items.get("Excalibur"));
         });
         ItemEventManager.register(globalEventHandler);
+        CommandLoader.loadCommands();
         minecraftServer.start("0.0.0.0", 25565);
     }
 

@@ -15,7 +15,6 @@ public abstract class ObjectComponent<T> extends BasicComponent implements ItemC
     }
 
     protected abstract T getObject(ItemComponentContext ctx);
-    public ObjectComponent(){}
     @Override
     public String returnData(ItemComponentContext ctx) {
 
